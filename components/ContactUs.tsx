@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 
@@ -22,79 +22,78 @@ export default function ContactUs() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
     console.log(formData);
   };
 
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Contact Us</h2>
-        <form onSubmit={handleSubmit} className="max-w-2xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-            <input
-              type="text"
-              name="firstName"
-              placeholder="First Name"
-              value={formData.firstName}
-              onChange={handleChange}
-              className="border p-3 rounded"
-              required
-            />
-            <input
-              type="text"
-              name="lastName"
-              placeholder="Last Name"
-              value={formData.lastName}
-              onChange={handleChange}
-              className="border p-3 rounded"
-              required
-            />
-          </div>
-          <input
-            type="email"
-            name="email"
-            placeholder="Email *"
-            value={formData.email}
-            onChange={handleChange}
-            className="border p-3 rounded w-full mb-4"
-            required
-          />
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Phone *"
-            value={formData.phone}
-            onChange={handleChange}
-            className="border p-3 rounded w-full mb-4"
-            required
-          />
-          <textarea
-            name="help"
-            placeholder="How Can We Help? *"
-            value={formData.help}
-            onChange={handleChange}
-            className="border p-3 rounded w-full mb-4"
-            rows={4}
-            required
-          />
-          <label className="flex items-center mb-4">
-            <input
-              type="checkbox"
-              name="consent"
-              checked={formData.consent}
-              onChange={handleChange}
-              className="mr-2"
-            />
-            <span className="text-sm">
-              I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from company. Message frequency varies. Message & data rates may apply. Text HELP to (XXX) XXX-XXXX for assistance. You can reply STOP to unsubscribe at any time.
-            </span>
-          </label>
-          <button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded w-full">
-            Submit
-          </button>
-        </form>
+    <div className="bg-white border border-gray-200 rounded-[40px] p-8 shadow-sm">
+      <div className="text-center mb-8">
+        <h2 className="text-3xl md:text-4xl font-serif font-bold">Contact Us</h2>
       </div>
-    </section>
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <input
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            value={formData.firstName}
+            onChange={handleChange}
+            className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:border-black focus:outline-none"
+            required
+          />
+          <input
+            type="text"
+            name="lastName"
+            placeholder="Last Name"
+            value={formData.lastName}
+            onChange={handleChange}
+            className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:border-black focus:outline-none"
+            required
+          />
+        </div>
+        <input
+          type="email"
+          name="email"
+          placeholder="Email *"
+          value={formData.email}
+          onChange={handleChange}
+          className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:border-black focus:outline-none"
+          required
+        />
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Phone *"
+          value={formData.phone}
+          onChange={handleChange}
+          className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:border-black focus:outline-none"
+          required
+        />
+        <textarea
+          name="help"
+          placeholder="How Can We Help? *"
+          value={formData.help}
+          onChange={handleChange}
+          className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:border-black focus:outline-none"
+          rows={4}
+          required
+        />
+        <label className="flex items-start gap-3 text-sm leading-6">
+          <input
+            type="checkbox"
+            name="consent"
+            checked={formData.consent}
+            onChange={handleChange}
+            className="mt-1 h-4 w-4 rounded border-gray-300"
+          />
+          <span>
+            I Consent to Receive SMS Notifications, Alerts & Occasional Marketing Communication from company. Message frequency varies. Message & data rates may apply. Text HELP to (XXX) XXX-XXXX for assistance. You can reply STOP to unsubscribe at any time.
+          </span>
+        </label>
+        <button type="submit" className="w-full rounded-xl bg-[#b12f1c] py-4 text-white font-semibold transition hover:bg-[#a22b1a]">
+          Submit
+        </button>
+      </form>
+    </div>
   );
 }
