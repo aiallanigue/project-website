@@ -20,7 +20,7 @@ export default function SuiteOfTools() {
 
   return (
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4"  style={{ color: '#000' }}>
         <h2 className="text-3xl md:text-4xl font-serif font-bold text-center mb-12">The Suite Of Tools To Support Your Business</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {tools.map((tool, index) => (

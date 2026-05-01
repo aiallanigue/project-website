@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function TrainingCalendar() {
   return (
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 text-center">
+      <div className="container mx-auto px-4 text-center"  style={{ color: '#000' }}>
         <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">KW Seven Hills</h2>
         <h3 className="text-2xl font-serif font-bold mb-8">Training Calendar</h3>
         <p className="text-lg mb-8 max-w-3xl mx-auto">

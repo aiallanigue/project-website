@@ -1,6 +1,6 @@
 export default function VisitUs() {
   return (
-    <div className="space-y-6">
+    <div className="space-y-6"  style={{ color: '#000' }}>
       <div className="text-center lg:text-left">
         <h2 className="text-3xl md:text-4xl font-serif font-bold mb-2">Visit Us</h2>
         <p className="text-lg">8050 Hosbrook Rd Ste 406</p>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function CompensationPlan() {
   return (
     <section className="py-16 bg-[#f5f3f0]">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4"  style={{ color: '#000' }}>
         <div className="grid gap-10 items-center lg:grid-cols-[0.95fr_1.05fr]">
           <div className="max-w-xl">
             <p className="text-3xl font-semibold leading-tight">Explore The KW Compensation Plan</p>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function ExploreTransitioning() {
   return (
     <section className="py-16 bg-white">
-      <div className="container mx-auto px-4 text-center">
+      <div className="container mx-auto px-4 text-center"  style={{ color: '#000' }}>
         <h2 className="text-3xl md:text-4xl font-bold mb-8">Explore Transitioning Your Business To KW!</h2>
         <p className="text-lg mb-4">Schedule a confidential conversation to discuss your business and what we can offer you in a transition package.</p>
         <p className="text-lg mb-8">Our team will present a transition offer tailored to your unique business needs, typically valued at over $15,750.</p>

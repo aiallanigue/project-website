@@ -60,7 +60,7 @@ export default function LeadershipTeam() {
 
   return (
     <section className="py-16 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.86),_rgba(245,241,236,0.95))]">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4"  style={{ color: '#000' }}>
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-serif font-bold tracking-[0.15em] uppercase">OUR LEADERSHIP TEAM</h2>
           <div className="mx-auto mt-4 h-[1px] w-24 bg-black"></div>
@@ -74,9 +74,9 @@ export default function LeadershipTeam() {
                 </div>
               </div>
               <div>
-                <h3 className="text-3xl" style={{ fontFamily: 'var(--kaushan-script)' }}>{leader.name}</h3>
-                <p className="text-base font-semibold">{leader.titleTop}</p>
-                {leader.titleBottom && <p className="text-base">{leader.titleBottom}</p>}
+                <h3 className="text-3xl" style={{ fontFamily: 'var(--kaushan-script)', color: '#000' }}>{leader.name}</h3>
+                <p className="text-base font-semibold" style={{ color: '#000' }} >{leader.titleTop}</p>
+                {leader.titleBottom && <p className="text-base" style={{ color: '#000' }}>{leader.titleBottom}</p>}
               </div>
               <div className="mt-6 flex w-full flex-col items-center gap-3 px-4">
                 <a href={`mailto:${leader.email}`} className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm shadow-sm transition hover:bg-gray-50">
